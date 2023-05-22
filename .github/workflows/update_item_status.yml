@@ -1,8 +1,6 @@
 name: Update items status
 on:
-  create:
-    types:
-      - branches
+  create
 
 env:
   ISSUE_NB: 0
