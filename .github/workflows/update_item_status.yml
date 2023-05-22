@@ -14,7 +14,7 @@ jobs:
         uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92
         with:
           app_id: ${{secrets.PROJECT_MANAGER_APP_ID}}
-          private_key: ${{PROJECT_MANAGER_APP_PRIVATE_KEY}}
+          private_key: ${{secrets.PROJECT_MANAGER_APP_PRIVATE_KEY}}
       - name: Get linked issue number
         id: get_issue_nb
         # Test if current branch start with the number of the linked issue, as defined in the default branch name pattern:
